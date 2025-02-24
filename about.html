@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="style.css" rel="stylesheet">
+	<script src="main.js"></script>
+	<title>Nine Dots Institute</title>
+</head>
+<body>
+	<div class="sidebar">
+		<div class="container sidebar-sticky">
+			<div class="sidebar-about">
+				<h1>
+					<a href=""> NINE DOTS INSTITUTE </a>
+				</h1>
+				<p class="lead">Passion for Improvement<br><br>We provide low cost consulting services for Operational Excellence<br><br></p>
+			</div>
+			<nav class="sidebar-nav">
+				<a class="sidebar-nav-item active" href="/"> Home </a>
+				<a class="sidebar-nav-item" href="./about.html"> About </a>
+				<a class="sidebar-nav-item" href="./case-studies.html"> Case Studies </a>
+			</nav>
+			<p>Contact: <span id="email"></span></p>
+			<p>© <span id="current-year"></span>. All rights reserved.</p>
+		</div>
+	</div>
+	<div class="content container">
+		<h1 class="page-title">About</h1>
+		<ul>
+			<li><span style="color:#046506;">Nine Dots Institute</span> was founded on <span style="color:#046506;">09/09/09</span> with a professional team for providing support to manufacturing and service industries in their journey towards Operational Excellence.</li>
+			<li>We identify the areas of improvement within business operations and help our clients to achieve significant improvement in quality, delivery and cost.
+				<img title="Customer Delight" alt="Customer Delight" src="./data/customer_delight.png"></li>
+			</ul>
+			<hr>
+			<p>We have over 14 years of experience supporting various industry sectors such as:</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Industry</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Engineering</td>
+						<td><img title="TetraPak" alt="TetraPak" src="./data/tetrapak.jpg"></td>
+						<td><img title="Legrand" alt="Legrand" src="./data/legrand.jpg"></td>
+						<td><img title="Larsen &amp; Toubro" alt="Larsen &amp; Toubro" src="./data/l_and_t.jpg"></td>
+						<td><img title="GIC" alt="GIC" src="./data/gic.jpg"></td>
+						<td><img title="Sidel" alt="Sidel" src="./data/sidel.jpg"></td>
+						<td><img title="Esbee" alt="Esbee" src="./data/esbee.jpg"></td>
+					</tr>
+					<tr>
+						<td>Process</td>
+						<td><img title="Hinoday" alt="Hinoday" src="./data/hinoday.jpg"></td>
+						<td><img title="Cargill" alt="Cargill" src="./data/cargill.jpg"></td>
+						<td><img title="henkel" alt="Henkel" src="./data/henkel.jpg"></td>
+						<td><img title="ITC" alt="ITC" src="./data/itc.jpg"></td>
+						<td><img title="TechNova" alt="TechNova" src="./data/technova.jpg"></td>
+					</tr>
+					<tr>
+						<td>Textile</td>
+						<td><img title="Raymond" alt="Raymond" src="./data/raymond.jpg"></td>
+						<td><img title="Morarjee" alt="Morarjee" src="./data/morarjee.jpg"></td>
+					</tr>
+					<tr>
+						<td>Bevarage</td>
+						<td><img title="United Breweries" alt="United Breweries" src="./data/ubl.jpg"></td>
+						<td><img title="Coca Cola" alt="Coca Cola" src="./data/coke.jpg"></td>
+					</tr>
+					<tr>
+						<td>Plastic</td>
+						<td><img title="Prince International" alt="Prince International" src="./data/prince_international.jpg"></td>
+						<td><img title="Prince Multiplast" alt="Prince Multiplast" src="./data/prince.jpg"></td>
+					</tr>
+					<tr>
+						<td>Cosmetics</td>
+						<td><img title="L'Oréal" alt="L'Oréal" src="./data/loreal.jpg"></td>
+					</tr>
+					<tr>
+						<td>Packaging</td>
+						<td><img title="Bericap" alt="Bericap" src="./data/bericap.jpg"></td>
+					</tr>
+					<tr>
+						<td>Paper</td>
+						<td><img title="Navneet" alt="Navneet" src="./data/navneet.jpg"></td>
+					</tr>
+					<tr>
+						<td>Construction</td>
+						<td><img title="Kumar Properties" alt="Kumar Properties" src="./data/kumar.jpg"></td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<p>Our approach is systematic identification and elimination of non-value adding activities and losses by involving everybody to achieve and sustain excellent results.</p>
+		</div>
+</body>
+<script>
+	const user = "info";
+	const domain = "ninedotsinstitute.com";
+	const email = user + "@" + domain;
+	document.getElementById('email').innerHTML  = '<a href="mailto:' + email + '">' + email + '</a>';
+	document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
